@@ -6,7 +6,10 @@
 
 from notifypy import Notify
 
+notification_title = input("Enter the notification title: ")
+notification_message = input("Enter the notification message: ")
+
 notification = Notify()
-notification.title = "Test"
-notification.message = "I am testing notifypy"
+notification.title = notification_title
+notification.message = notification_message
 notification.send()
